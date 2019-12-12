@@ -1,0 +1,82 @@
+// Typography partial
+
+@import "colors";
+
+// Fonts
+$font-family: "Raleway", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+$font-accent: "Cardo", Georgia, 'Times New Roman', serif;
+$lato: 'Lato', sans-serif;
+// Weights
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$black: 900;
+
+// Sizes
+$font-size-h1:30px;
+$font-size-h2:40px;
+$font-size-h3:24px;
+$font-size-h4:18px;
+$font-size-h5:15px;
+$font-size-p: 15px;
+$nav-font-size: 18px;
+$blog-post-title: 11px;
+
+// Responsive Sizes
+$bp-small: 320px;
+$bp-small-2: 480px;
+$bp-small-3: 568px;
+$bp-medium: 640px;
+$bp-medium-2: 900px;
+$bp-large: 1060px;
+
+
+// Line height
+
+
+// Styles
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+	line-height: 22px;
+}
+
+.text__red {
+	color: $red;
+}
+
+.text-light {
+	text-align: center;
+	&__title {
+		color: #262626;
+		font-weight: $bold;
+		font-size: 30px;
+		margin-bottom: 43px;
+	}
+	&__descr {
+		margin-bottom: 95px;
+		font-family: $lato;
+		color: #505050;
+	}
+}
+
+.text-dark {
+	text-align: center;
+	&__title {
+		color: #ffffff;
+		font-weight: $bold;
+		font-size: 30px;
+		margin-bottom: 43px;
+	}
+	&__descr {
+		margin-bottom: 95px;
+		font-family: $lato;
+		color: #a4a4a4;
+	}
+}

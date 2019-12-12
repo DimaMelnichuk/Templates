@@ -1,0 +1,99 @@
+/* ==========================================================================
+Аккордеон
+========================================================================== */
+
+/* стили блока аккордеон */
+.accordion {
+  max-width: 570px; 
+}
+/* секции аккордеона */
+.accordion .accordion_item {
+  margin-bottom:10px;
+  position:relative;
+}
+/* заголовки панелей аккордеона */
+.accordion .title_block {
+  font-weight: 500;
+  font-size: 20px;
+  color: #262626;
+  cursor:pointer;
+  background: #f7f7f7;
+  border: 1px solid #e7e7e7;
+  padding:10px 55px 10px 15px;
+  -webkit-transition:all .2s linear 0;
+  -webkit-transition-delay:.2s 0;
+  transition:all .2s linear 0;
+}
+/* переключатель панелей*/
+
+.title_block:before,
+.title_block:after {
+	content: "";
+	height:8px;
+  width:8px;
+  position: absolute;
+  right:20px;
+  top:18px;
+  border:2px solid #262626;
+  border-right-width:0;
+  border-top-width:0;
+  transform:rotate(-45deg);
+}
+
+.title_block.active_block:before,
+.title_block.active_block:after {
+  border:2px solid red;
+  border-left-width:0;
+  border-bottom-width:0;
+  top:18px;
+}
+
+.title_block.active_block {
+	color: red;
+	display: block;
+}
+
+.accordion .title_block:hover {
+  color: red;
+}
+ 
+/* заголовок активного блока  */
+.accordion .active_block .title_block {
+  background: #f7f7f7;
+  color: red;
+}
+/* блоки с содержанием */
+.accordion .info {
+  display:none;
+  padding: 15px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e7e7e7;
+}
+/* параграф внутри блоков с содержанием */
+.accordion .info_item {
+  margin-bottom:10px;
+  line-height: 22px;
+}
+/* картинки внутри аккордеона */
+.accordion .info img {
+    height: auto;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+/* полноразмерная картинка */
+.large-img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* миниатюра слева */
+.img-left {
+    width: 25%;
+    float:left;
+    margin:5px 15px 5px 0;
+}
+/* миниатюра справа */
+.img-right {
+    width: 25%;
+    float:right;
+    margin:5px 0 5px 15px;
+}
