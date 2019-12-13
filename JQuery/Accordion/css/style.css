@@ -1,10 +1,9 @@
 /* ==========================================================================
 Аккордеон
 ========================================================================== */
-
 /* стили блока аккордеон */
 .accordion {
-  max-width: 570px; 
+  max-width: 470px; 
 }
 /* секции аккордеона */
 .accordion .accordion_item {
@@ -61,6 +60,10 @@
 .accordion .active_block .title_block {
   background: #f7f7f7;
   color: red;
+}
+/* содержание активного блока */
+.accordion .accordion_item:nth-child(1) .info{
+  display: block;
 }
 /* блоки с содержанием */
 .accordion .info {
