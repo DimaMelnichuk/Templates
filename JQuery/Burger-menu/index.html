@@ -2,32 +2,39 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Burger-menu</title>
-		<link rel="stylesheet" href="css/normalize.css">
+	<title>Burger menu</title>
 	 <link rel="stylesheet" href="css/style.css" />
+	 <link rel="stylesheet" href="css/normalize.css" />
 </head>
 <body>
 	
-	<section class="header">
-		<section class="navigation">
-			<header>
-				<div class="header-content">
-					<a href="#" class="header-logo">brunch</a>
-					<div class="menu__burger">
-						<span></span>
-					</div>
-					<nav class="header-menu">
-						<ul class="header-menu__list">
-							<li class="header-menu__item"><a href="#" class="header-menu__link">welcome</a></li>
-							<li class="header-menu__item"><a href="#" class="header-menu__link">menu</a></li>
-							<li class="header-menu__item"><a href="#" class="header-menu__link">events</a></li>
-							<li class="header-menu__item"><a href="#" class="header-menu__link">contact</a></li>
-						</ul>
-					</nav>
+<header class="header" >
+		<div class="container">
+			<div class="header__inner">
+				<a href="#home" class="logo">
+					Logo Site
+				</a>
+				<!--Burger-menu-->
+				<div class="menu__burger">
+					<span></span>
 				</div>
-			</header>
-		</section>
-	</section>
+				<!--Burger-menu-end-->
+				<nav class="header-menu" id="menu">
+					<ul class="menu__list">                                     
+						<li class="menu__item"><a href="#home" class="menu__link">home</a></li>
+						<li class="menu__item"><a href="#about" class="menu__link">about us</a></li>
+						<li class="menu__item"><a href="#portfolio" class="menu__link">PORTFOLIO </a></li>
+						<li class="menu__item"><a href="#clients" class="menu__link">clients</a></li>
+						<li class="menu__item"><a href="#team" class="menu__link">team</a></li>
+						<li class="menu__item"><a href="" class="menu__link">services</a></li>
+						<li class="menu__item"><a href="#blog" class="menu__link">Blog</a></li>
+						<li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header><!--header-end-->
+
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/jquery-3.4.1.min.js"></script>
