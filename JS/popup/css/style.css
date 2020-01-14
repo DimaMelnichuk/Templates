@@ -1,0 +1,132 @@
+/* ==========================================================================
+  General Styles
+========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0; 
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* ==========================================================================
+Popup
+========================================================================== */
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, .7);
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  display: none;
+}
+
+
+.popup-content {
+  background-color: rgb(0, 0, 0);
+  width: 300px;
+  height: 350px;
+}
+
+.popup_close {
+  color: #FFF;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  top: 0;
+  font-size: 23px;
+  line-height: 1;
+}
+.popup_close:hover {
+  color: #e84118;
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+  position: relative;
+}
+.popup_title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 20px;
+  color: #fff;
+  font-weight: $bold;
+  font-size: 25px;
+}
+
+.popup-form input[type="text"],
+.popup-form input[type="password"] {
+  border: 0;
+  display: block;
+  background: none;
+  text-align: center;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 24px;
+  padding: 14px 15px;
+  width: 200px;
+  margin: 10px auto;
+  outline: none;
+  transition: 0.25s;
+}
+
+.popup-form .popup_btn {
+  border: 0;
+  display: block;
+  background: none;
+  text-align: center;
+  color: #fff;
+  border: 2px solid #e84118;
+  border-radius: 24px;
+  padding: 14px 40px;
+  margin: 10px auto;
+  outline: none;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.popup-form .popup_btn:hover {
+  background-color: #e84118;
+}
+
+.popup-form input[type="text"]:focus,
+.popup-form input[type="password"]:focus {
+  width: 250px;
+  border-color: #e84118;
+}
+
+button.mfp-close:hover, button.mfp-close:focus {
+  color: #e84118;
+}
