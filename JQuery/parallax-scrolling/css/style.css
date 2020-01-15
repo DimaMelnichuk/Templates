@@ -1,0 +1,72 @@
+/* ==========================================================================
+  General Styles
+========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0; 
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* ==========================================================================
+Parallax-Scrolling
+========================================================================== */
+.parallax {
+  height: 500px;
+  background: url(../img/parallax1.jpg) no-repeat center;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  background-attachment: fixed;
+}
+
+.h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.parallax h1 {
+  font-size: 100px;
+  text-align: center;
+  color: #FFF;
+  padding-top: 150px;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.parallax-window h1 {
+  font-size: 100px;
+  text-align: center;
+  color: #FFF;
+  padding-top: 150px;
+}
