@@ -1,5 +1,6 @@
 $(function(){
 
+   /***************** Accordion ********************/
    $(".title_block").click(function(event){
       if($(".title_block").hasClass("active_block")){
         $(".title_block").not($(this)).removeClass("active_block");

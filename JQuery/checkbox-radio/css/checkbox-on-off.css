@@ -1,0 +1,156 @@
+/* ==========================================================================
+  Checkbox
+========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0; 
+}
+
+ul li {
+  list-style: none;
+  margin-top: 19px;
+}
+
+ul {
+  margin-top: 100px;
+}
+
+a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #2196F3;
+  transition: background-color .3s;
+}
+a:hover {
+    background-color: #74b9ff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.label {
+  display: flex !important;
+}
+
+/* ==========================================================================
+ Radio Buttons
+========================================================================== */
+/* Customize the label (the container) */
+.label {
+  display: inline-block;
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ccc;
+  border-radius: 54px;
+  transition: all .3s;
+}
+.small {
+  height: 18px;
+  width: 30px;
+}
+.medium {
+  height: 30px;
+  width: 50px;
+}
+.big {
+  height: 40px;
+  width: 66px;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after,
+.checkmark:before {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.checkmark:after {
+  border-radius: 50%;
+  background: white;
+  top: 2px;
+  left: 2px;
+}
+.small:after {
+  width: 13px;
+  height: 14px;
+}
+.medium:after {
+  width: 25px;
+  height: 26px;
+}
+.big:after {
+  width: 35px;
+  height: 36px;
+}
+
+.checkmark.active:after {
+  display: none;
+}
+
+.checkmark.active:before{
+  border-radius: 50%;
+  background: white;
+  top: 2px;
+  right: 2px;
+}
+.small.active:before{
+  width: 13px;
+  height: 14px;
+}
+.big.active:before{
+  width: 35px;
+  height: 36px;
+}
+.medium.active:before{
+  width: 25px;
+  height: 26px;
+}
+
+.checkmark.active {
+  background-color: #2196F3;
+  background-color: #44bd32;
+}
+
