@@ -1,16 +1,16 @@
 # Templates
  
 ## JQuery
-* Accordion
-* Burger-menu
+* accordion
+* burger-menu
+* checkbox-radio
+* header-scroll
 * left-menu
+* parallax-scrolling
 * tabs-menu
 
 ## CSS
 * percentage-circle
-*  _fonts.scss
-* normalize.css
-* reset.css
 * tooltips
 
 ## JS
@@ -21,3 +21,12 @@
 * package.json
 * gulpfile.js
 * .gitignore
+
+## libs
+* bootstrap-4.0.0
+* magnific-popup
+*  _fonts.scss
+* jquery-3.4.1.min.js
+* parallax.min.js
+* normalize.css
+* reset.css
