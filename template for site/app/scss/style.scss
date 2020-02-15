@@ -1,9 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 // Imports
 @import "partials/libs";
-@import "partials/colors";
+@import "partials/global";
 @import "partials/typography";
-@import "partials/buttons";
 /* ==========================================================================
 	General Styles
 ========================================================================== */
@@ -31,11 +30,28 @@ ul li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  line-height: 22px;
+}
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
+/* ==========================================================================
+  Styles
+========================================================================== */
+
+
+
+
+
 
 
 @import "partials/media";

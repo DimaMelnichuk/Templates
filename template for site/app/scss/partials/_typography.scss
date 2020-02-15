@@ -1,6 +1,15 @@
 // Typography partial
 
-@import "colors";
+// Colours partial
+$white: #fff;
+$black: #000;
+$red: #ff0036;
+$gray: #262626;
+$font-gray: #505050;
+$font-color: #a4a4a4;
+$line-color: #262626;
+$brand-color: #52c13e;
+$btn-black: #131313;
 
 // Fonts
 $font-family: "Raleway", sans-serif;
@@ -33,17 +42,3 @@ $bp-small-3: 568px;
 $bp-medium: 640px;
 $bp-medium-2: 900px;
 $bp-large: 1060px;
-
-
-// Line height
-
-
-// Styles
-a {
-	text-decoration: none;
-}
-
-p {
-	margin: 0;
-	line-height: 22px;
-}
