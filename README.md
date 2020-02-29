@@ -12,6 +12,7 @@
 ## CSS
 * percentage-circle
 * tooltips
+* adaptive-timeline
 
 ## JS
 * popup
