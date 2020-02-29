@@ -60,7 +60,7 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('export', function(){
+gulp.task('export', async function(){
 	let BuildHtml = gulp.src('app/**/*.html')
 		.pipe(gulp.dest('dist'));
 

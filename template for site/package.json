@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DimaMelnichuk/creativia.git"
+    "url": "git+https://github.com/DimaMelnichuk"
   },
   "author": "Dima Melnichuk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DimaMelnichuk/creativia/issues"
+    "url": "https://github.com/DimaMelnichuk"
   },
-  "homepage": "https://github.com/DimaMelnichuk/creativia#readme",
+  "homepage": "https://github.com/DimaMelnichuk",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
