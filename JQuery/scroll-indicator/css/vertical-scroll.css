@@ -1,0 +1,65 @@
+/* ==========================================================================
+  General Styles
+========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0; 
+}
+
+ul li {
+  list-style: none;
+  margin-top: 19px;
+}
+
+ul {
+  margin-top: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* remove scroll */
+::-webkit-scrollbar {
+  width: 0;
+}
+/* Style the header: fixed position (always stay at the top) */
+.progress-line {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+}
+/* The progress container */
+.progress-container {
+  width: 8px;
+  height: 100%;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  height: 0%;
+}
