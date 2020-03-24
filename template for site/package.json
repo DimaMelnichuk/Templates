@@ -1,7 +1,7 @@
 {
   "name": "creativia",
   "version": "1.0.0",
-  "description": "make a site with bootstrap, gulp, normalize, jquery",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,10 +25,10 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "gulp-sourcemaps": "^2.6.5"
   },
   "dependencies": {
-    "magnific-popup": "^1.1.0",
     "slick-carousel": "^1.8.1"
   }
 }

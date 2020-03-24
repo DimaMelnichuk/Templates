@@ -6,6 +6,7 @@ let gulp = require('gulp'),
 		rename = require('gulp-rename'),
 		del = require('del'),
 		autoprefixer = require('gulp-autoprefixer');
+		sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('clean', async function(){
 	del.sync('dist')
@@ -13,11 +14,13 @@ gulp.task('clean', async function(){
 
 gulp.task('scss', function(){
 	return gulp.src('app/scss/**/*.scss')
+		.pipe(sourcemaps.init())
 		.pipe(sass({outputStyle: 'compressed'}))
 		.pipe(autoprefixer({
-			overrideBrowserslist: ['last 8 versions']
+			overrideBrowserslist: ['last 5 versions']
 		}))
 		.pipe(rename({suffix: '.min'}))
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('app/css/'))
 		.pipe(browserSync.reload({stream: true}))
 });
