@@ -6,12 +6,12 @@
   max-width: 470px; 
 }
 /* секции аккордеона */
-.accordion .accordion_item {
+.accordion .accordion__item {
   margin-bottom:10px;
   position:relative;
 }
 /* заголовки панелей аккордеона */
-.accordion .title_block {
+.accordion .accordion__item-title {
   font-weight: 500;
   font-size: 20px;
   color: #262626;
@@ -25,8 +25,8 @@
 }
 /* переключатель панелей*/
 
-.title_block:before,
-.title_block:after {
+.accordion__item-title:before,
+.accordion__item-title:after {
 	content: "";
 	height:8px;
   width:8px;
@@ -39,34 +39,34 @@
   transform:rotate(-45deg);
 }
 
-.title_block.active_block:before,
-.title_block.active_block:after {
+.accordion__item-title.accordion__item-title--active:before,
+.accordion__item-title.accordion__item-title--active:after {
   border:2px solid red;
   border-left-width:0;
   border-bottom-width:0;
   top:18px;
 }
 
-.title_block.active_block {
+.accordion__item-title.accordion__item-title--active {
 	color: red;
 	display: block;
 }
 
-.accordion .title_block:hover {
+.accordion .accordion__item-title:hover {
   color: red;
 }
  
 /* заголовок активного блока  */
-.accordion .active_block .title_block {
+.accordion .accordion__item-title--active .accordion__item-title {
   background: #f7f7f7;
   color: red;
 }
 /* содержание активного блока */
-.accordion .accordion_item:nth-child(1) .info{
+.accordion .accordion__item:nth-child(1) .accordion__item-info{
   display: block;
 }
 /* блоки с содержанием */
-.accordion .info {
+.accordion .accordion__item-info {
   display:none;
   padding: 15px;
   overflow: hidden;
@@ -74,29 +74,8 @@
   border: 1px solid #e7e7e7;
 }
 /* параграф внутри блоков с содержанием */
-.accordion .info_item {
+.accordion .accordion__item-text {
   margin-bottom:10px;
   line-height: 22px;
 }
-/* картинки внутри аккордеона */
-.accordion .info img {
-    height: auto;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-/* полноразмерная картинка */
-.large-img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-/* миниатюра слева */
-.img-left {
-    width: 25%;
-    float:left;
-    margin:5px 15px 5px 0;
-}
-/* миниатюра справа */
-.img-right {
-    width: 25%;
-    float:right;
-    margin:5px 0 5px 15px;
-}
+
