@@ -8,6 +8,17 @@ $(function(){
  
 });
 
+
+/***************** Menu-btn ********************/
+let menu_burger = document.querySelector('.menu__burger');
+let menu = document.querySelector('.menu');
+menu_burger.addEventListener("click", function (e) {
+	menu.classList.toggle('active');
+	menu_burger.classList.toggle('active');
+});
+
+
+
 /***************** WebP ********************/
 function testWebP(callback) {
 	var webP = new Image();
@@ -29,11 +40,11 @@ if (document.querySelector('.wrapper')) {
 
 /***************** ibg adaptive inline bg ********************/
 function ibg(){
-	let ibg=document.querySelectorAll("._ibg");
+	let ibg=document.querySelectorAll(".ibg");
 	for (var i = 0; i < ibg.length; i++) {
-	if(ibg[i].querySelector('img')){
-	ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
+		if(ibg[i].querySelector('img')){
+			ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
+		}		
 	}
-	}
-	}
+}
 ibg();

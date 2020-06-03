@@ -1,15 +1,16 @@
-$(function(){
-
-});
-
-
-	/***************** Popup JS********************/
+	
 	document.getElementById('popup').addEventListener('click', 
-	  function() {
+	  function(e) {
 	    document.querySelector('.popup').style.display = 'flex';
 	  });
 
-	document.querySelector('.popup_close').addEventListener('click',
-	  function() {
-	    document.querySelector('.popup').style.display = 'none';
-	  });
+	document.querySelector('.popup__close').addEventListener('click',
+	  function(e) {
+		document.querySelector('.popup').style.display = 'none';
+	 });
+
+	window.onclick = function(event) {
+	  if (event.target == document.getElementById("popup")) {
+	    document.getElementById("popup").style.display = "none";
+	  }
+	}
