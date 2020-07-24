@@ -1,0 +1,36 @@
+.tabs {
+  max-width: 400px;
+}
+
+.tabs__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabs__title-item {
+  padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  background-color: #636e72;
+  color: #fff;
+}
+
+.tabs__title-item--active {
+  background-color: #0984e3;
+}
+
+.tabs__content {
+  background-color: #eeee;
+}
+
+.tabs__content-item {
+  padding: 10px;
+  display: none;
+}
+
+.tabs__content-item--active {
+  display: block;
+}

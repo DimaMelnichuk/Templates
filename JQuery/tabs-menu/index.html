@@ -3,30 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Tabs Menu</title>
-	 <link rel="stylesheet" href="css/style.css" />
-	 <link rel="stylesheet" href="css/normalize.css" />
+	 <link rel="stylesheet" href="css/tabs.css" />
 </head>
 <body>
 	<div class="container">
 		
-		<div class="tab">
-			<ul class="tab_nav">
-				<li class="active">Tab 1</li>
-				<li>Tab 2</li>
-				<li>Tab 3</li>
-				<li>Tab 4</li>
-			</ul>
-			<div class="tab_area">
-				<div class="tab_container">
+		<div class="tabs">
+			<div class="tabs__title">
+				<a class="tabs__title-item tabs__title-item--active" href="#tab-1">Tab 1</a>
+				<a class="tabs__title-item" href="#tab-2">Tab 2</a>
+				<a class="tabs__title-item" href="#tab-3">Tab 3</a>
+				<a class="tabs__title-item" href="#tab-4">Tab 4</a>
+			</div>
+			<div class="tabs__content">
+				<div id="tab-1" class="tabs__content-item">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, tenetur.</p>
 				</div>		
-				<div class="tab_container">
+				<div id="tab-2" class="tabs__content-item">
 					<p>Lorem ipsum dolor sit amet, co</p>
 				</div>
-				<div class="tab_container">
+				<div id="tab-3" class="tabs__content-item">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, tenetur.</p>
 				</div>
-				<div class="tab_container">
+				<div id="tab-4" class="tabs__content-item">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, tenetur.</p>
 				</div>
 			</div>
@@ -35,7 +34,7 @@
 	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/tabs.js"></script>
 
 </body>
 </html>

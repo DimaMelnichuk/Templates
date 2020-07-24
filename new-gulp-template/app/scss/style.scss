@@ -2,7 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 // Mixins
-@import "mixins/fonts-style";
 @import "mixins/adaptive-font";
 
 // Partials
@@ -25,6 +24,7 @@
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
+html {scroll-behavior: smooth;}
 html,body{font-family: $font-family;height:100%;width:100%;font-size:100%;line-height:1;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
 input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}
