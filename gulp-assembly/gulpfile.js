@@ -1,30 +1,30 @@
-let project_folder = "dist";
-let source_folder = "app";
+let srcPath = "app";
+let distPath = "dist";
 
 let fs = require('fs');
 
 let path = {
 	build: {
-		html: project_folder + "/",
-		css: project_folder + "/css/",
-		js: project_folder + "/js/",
-		img: project_folder + "/img/",
-		fonts: project_folder + "/fonts/",
+		html: distPath + "/",
+		css: distPath + "/css/",
+		js: distPath + "/js/",
+		img: distPath + "/img/",
+		fonts: distPath + "/fonts/",
 	},
 	src: {
-		html: [source_folder + "/**/*.html", "!" + source_folder + "/**/_*.html"],
-		css: source_folder + "/scss/style.scss",
-		js: source_folder + "/js/*.js",
-		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
-		fonts: source_folder + "/fonts/**/*",
+		html: [srcPath + "/**/*.html", "!" + srcPath + "/**/_*.html"],
+		css: srcPath + "/scss/style.scss",
+		js: srcPath + "/js/*.js",
+		img: srcPath + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+		fonts: srcPath + "/fonts/**/*",
 	},
 	watch: {
-		html: source_folder + "/**/*.html",
-		css: source_folder + "/scss/**/*.scss",
-		js: source_folder + "/js/**/*.js",
-		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}"
+		html: srcPath + "/**/*.html",
+		css: srcPath + "/scss/**/*.scss",
+		js: srcPath + "/js/**/*.js",
+		img: srcPath + "/img/**/*.{jpg,png,svg,gif,ico,webp}"
 	},
-	clean: "./" + project_folder + "/"
+	clean: "./" + distPath + "/"
 }
 
 let {src, dest} = require('gulp'),
@@ -47,7 +47,7 @@ let {src, dest} = require('gulp'),
 
 
 function deploy(cb) {
-	ghPages.publish(pathPages.join(process.cwd(), "./" + project_folder + "/"), cb);
+	ghPages.publish(pathPages.join(process.cwd(), "./" + distPath + "/"), cb);
 }
 exports.deploy = deploy;
 
@@ -55,7 +55,7 @@ exports.deploy = deploy;
 function browserSync(params) {
 	browsersync.init({
 		server:{
-			baseDir: "./" + project_folder + "/"
+			baseDir: "./" + distPath + "/"
 		},
 		notify: false
 	})
